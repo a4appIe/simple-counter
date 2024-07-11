@@ -13,7 +13,7 @@ function App() {
         <button
           onClick={() => {
             count > 0
-              ? setCount(count-1)
+              ? setCount((prev)=>(prev-1))
               : "";
           }}
         >
@@ -22,7 +22,7 @@ function App() {
         <div className="text-3xl "> {count} </div>
         <button
           onClick={() => {
-            setCount(count+1);
+            setCount((prev)=>(prev+1));
           }}
         >
           +
